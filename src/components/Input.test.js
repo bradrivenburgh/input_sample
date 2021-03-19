@@ -10,7 +10,7 @@ describe("Input", () => {
     render(<Input />);
 
     const input = screen.getByRole("textbox");
-    expect(input).toHaveTextContent("");
+    expect(input.value).toBe("");
   });
 
   test("passes the input successfully", () => {
